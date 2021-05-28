@@ -3,3 +3,315 @@
 [DEBUG] [2021-05-28 09:42] LoginTimeout 30
 [DEBUG] [2021-05-28 09:42] testSqlSession()
 [DEBUG] [2021-05-28 09:42] session org.apache.ibatis.session.defaults.DefaultSqlSession@4684975a
+[DEBUG] [2021-05-28 10:33] testGetLists()
+[DEBUG] [2021-05-28 10:33] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 10:33] ==> Parameters: 
+[TRACE] [2021-05-28 10:33] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 10:33] <==        Row: 66, tkdrjs7@naver.com, 1111111, ÍπÄÏÉÅÍ±¥, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 10:33] <==        Row: 68, test1@test.com, 111, ÍπÄÏÉÅÏùº, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 10:33] <==        Row: 70, test2@test.com, , ÍπÄÎØº, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 10:33] <==        Row: 71, test3@test.com, 111111, ÍπÄÏßÄÏùÄ, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 10:33] <==        Row: 72, test26@test.com, 1234567, ÍπÄÏßÑÏòÅ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 10:33] <==        Row: 73, test5@test.com, 55555555, ÍπÄÏßÄÏó∞, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 10:33] <==        Row: 74, test50@test.com, 1111111, ÍπÄÎØ∏Ïó∞, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 10:33] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 10:33] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 10:33] <==        Row: 77, test27@test.com, 2222222, ÍπÄÏÉÅÍ±¥, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 10:33] <==        Row: 81, tkdrjs72@naver.com, 123456, ÍπÄÏÉÅÍ±¥, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 10:33] <==        Row: 82, tkdrjs722@naver.com, 123456, ÍπÄÏÉÅÍ±¥, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 10:33] <==        Row: 83, tkdrjs7232@naver.com, 123456, ÍπÄÏÉÅÍ±¥, 2021-05-27 12:44:50.0
+[DEBUG] [2021-05-28 10:33] <==      Total: 13
+[DEBUG] [2021-05-28 10:34] testDataSource()
+[DEBUG] [2021-05-28 10:34] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 10:34] LoginTimeout 30
+[DEBUG] [2021-05-28 10:34] testSqlSession()
+[DEBUG] [2021-05-28 10:34] session org.apache.ibatis.session.defaults.DefaultSqlSession@7dd02f0c
+[DEBUG] [2021-05-28 10:34] testGetLists()
+[DEBUG] [2021-05-28 10:34] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 10:34] ==> Parameters: 
+[TRACE] [2021-05-28 10:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 10:34] <==        Row: 66, tkdrjs7@naver.com, 1111111, ±ËªÛ∞«, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 10:34] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 10:34] <==        Row: 70, test2@test.com, , ±ËπŒ, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 10:34] <==        Row: 71, test3@test.com, 111111, ±Ë¡ˆ¿∫, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 10:34] <==        Row: 72, test26@test.com, 1234567, ±Ë¡¯øµ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 10:34] <==        Row: 73, test5@test.com, 55555555, ±Ë¡ˆø¨, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 10:34] <==        Row: 74, test50@test.com, 1111111, ±ËπÃø¨, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 10:34] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 10:34] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 10:34] <==        Row: 77, test27@test.com, 2222222, ±ËªÛ∞«, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 10:34] <==        Row: 81, tkdrjs72@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 10:34] <==        Row: 82, tkdrjs722@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 10:34] <==        Row: 83, tkdrjs7232@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:50.0
+[DEBUG] [2021-05-28 10:34] <==      Total: 13
+[DEBUG] [2021-05-28 10:42] testDataSource()
+[DEBUG] [2021-05-28 10:42] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 10:42] LoginTimeout 30
+[DEBUG] [2021-05-28 10:42] testSqlSession()
+[DEBUG] [2021-05-28 10:42] session org.apache.ibatis.session.defaults.DefaultSqlSession@7dd02f0c
+[DEBUG] [2021-05-28 10:42] testGetLists()
+[DEBUG] [2021-05-28 10:42] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 10:42] ==> Parameters: 
+[TRACE] [2021-05-28 10:42] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 10:42] <==        Row: 66, tkdrjs7@naver.com, 1111111, ±ËªÛ∞«, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 10:42] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 10:42] <==        Row: 70, test2@test.com, , ±ËπŒ, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 10:42] <==        Row: 71, test3@test.com, 111111, ±Ë¡ˆ¿∫, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 10:42] <==        Row: 72, test26@test.com, 1234567, ±Ë¡¯øµ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 10:42] <==        Row: 73, test5@test.com, 55555555, ±Ë¡ˆø¨, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 10:42] <==        Row: 74, test50@test.com, 1111111, ±ËπÃø¨, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 10:42] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 10:42] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 10:42] <==        Row: 77, test27@test.com, 2222222, ±ËªÛ∞«, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 10:42] <==        Row: 81, tkdrjs72@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 10:42] <==        Row: 82, tkdrjs722@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 10:42] <==        Row: 83, tkdrjs7232@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:50.0
+[DEBUG] [2021-05-28 10:42] <==      Total: 13
+[DEBUG] [2021-05-28 10:44] testGetLists()
+[DEBUG] [2021-05-28 10:44] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 10:44] ==> Parameters: 
+[TRACE] [2021-05-28 10:44] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 10:44] <==        Row: 66, tkdrjs7@naver.com, 1111111, ÍπÄÏÉÅÍ±¥, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 10:44] <==        Row: 68, test1@test.com, 111, ÍπÄÏÉÅÏùº, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 10:44] <==        Row: 70, test2@test.com, , ÍπÄÎØº, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 10:44] <==        Row: 71, test3@test.com, 111111, ÍπÄÏßÄÏùÄ, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 10:44] <==        Row: 72, test26@test.com, 1234567, ÍπÄÏßÑÏòÅ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 10:44] <==        Row: 73, test5@test.com, 55555555, ÍπÄÏßÄÏó∞, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 10:44] <==        Row: 74, test50@test.com, 1111111, ÍπÄÎØ∏Ïó∞, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 10:44] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 10:44] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 10:44] <==        Row: 77, test27@test.com, 2222222, ÍπÄÏÉÅÍ±¥, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 10:44] <==        Row: 81, tkdrjs72@naver.com, 123456, ÍπÄÏÉÅÍ±¥, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 10:44] <==        Row: 82, tkdrjs722@naver.com, 123456, ÍπÄÏÉÅÍ±¥, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 10:44] <==        Row: 83, tkdrjs7232@naver.com, 123456, ÍπÄÏÉÅÍ±¥, 2021-05-27 12:44:50.0
+[DEBUG] [2021-05-28 10:44] <==      Total: 13
+[DEBUG] [2021-05-28 11:12] testGetMember()
+[DEBUG] [2021-05-28 11:12] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 11:12] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 11:12] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:12] <==        Row: 68, test1@test.com, 111, ÍπÄÏÉÅÏùº, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 11:12] <==      Total: 1
+[DEBUG] [2021-05-28 11:12] testDataSource()
+[DEBUG] [2021-05-28 11:12] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 11:12] LoginTimeout 30
+[DEBUG] [2021-05-28 11:12] testSqlSession()
+[DEBUG] [2021-05-28 11:12] session org.apache.ibatis.session.defaults.DefaultSqlSession@2bf81e6e
+[DEBUG] [2021-05-28 11:12] testGetMember()
+[DEBUG] [2021-05-28 11:12] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 11:12] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 11:12] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:12] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 11:12] <==      Total: 1
+[DEBUG] [2021-05-28 11:12] testGetLists()
+[DEBUG] [2021-05-28 11:12] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 11:12] ==> Parameters: 
+[TRACE] [2021-05-28 11:12] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:12] <==        Row: 66, tkdrjs7@naver.com, 1111111, ±ËªÛ∞«, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 11:12] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 11:12] <==        Row: 70, test2@test.com, , ±ËπŒ, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 11:12] <==        Row: 71, test3@test.com, 111111, ±Ë¡ˆ¿∫, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 11:12] <==        Row: 72, test26@test.com, 1234567, ±Ë¡¯øµ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 11:12] <==        Row: 73, test5@test.com, 55555555, ±Ë¡ˆø¨, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 11:12] <==        Row: 74, test50@test.com, 1111111, ±ËπÃø¨, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 11:12] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 11:12] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 11:12] <==        Row: 77, test27@test.com, 2222222, ±ËªÛ∞«, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 11:12] <==        Row: 81, tkdrjs72@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 11:12] <==        Row: 82, tkdrjs722@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 11:12] <==        Row: 83, tkdrjs7232@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:50.0
+[DEBUG] [2021-05-28 11:12] <==      Total: 13
+[DEBUG] [2021-05-28 11:21] testRegisterMember()
+[DEBUG] [2021-05-28 11:21] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, ?)
+[DEBUG] [2021-05-28 11:21] ==> Parameters: test28@test.com(String), 11111(String), ÍπÄÏÉÅÍ±¥(String), null
+[DEBUG] [2021-05-28 11:21] <==    Updates: 1
+[DEBUG] [2021-05-28 11:21] testDataSource()
+[DEBUG] [2021-05-28 11:21] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 11:21] LoginTimeout 30
+[DEBUG] [2021-05-28 11:21] testSqlSession()
+[DEBUG] [2021-05-28 11:21] session org.apache.ibatis.session.defaults.DefaultSqlSession@7dd02f0c
+[DEBUG] [2021-05-28 11:21] testGetMember()
+[DEBUG] [2021-05-28 11:21] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 11:21] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 11:21] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:21] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 11:21] <==      Total: 1
+[DEBUG] [2021-05-28 11:21] testGetLists()
+[DEBUG] [2021-05-28 11:21] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 11:21] ==> Parameters: 
+[TRACE] [2021-05-28 11:21] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:21] <==        Row: 66, tkdrjs7@naver.com, 1111111, ±ËªÛ∞«, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 11:21] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 11:21] <==        Row: 70, test2@test.com, , ±ËπŒ, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 11:21] <==        Row: 71, test3@test.com, 111111, ±Ë¡ˆ¿∫, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 11:21] <==        Row: 72, test26@test.com, 1234567, ±Ë¡¯øµ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 11:21] <==        Row: 73, test5@test.com, 55555555, ±Ë¡ˆø¨, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 11:21] <==        Row: 74, test50@test.com, 1111111, ±ËπÃø¨, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 11:21] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 11:21] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 11:21] <==        Row: 77, test27@test.com, 2222222, ±ËªÛ∞«, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 11:21] <==        Row: 81, tkdrjs72@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 11:21] <==        Row: 82, tkdrjs722@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 11:21] <==        Row: 83, tkdrjs7232@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:50.0
+[TRACE] [2021-05-28 11:21] <==        Row: 84, test28@test.com, 11111, ±ËªÛ∞«, null
+[DEBUG] [2021-05-28 11:21] <==      Total: 14
+[DEBUG] [2021-05-28 11:21] testRegisterMember()
+[DEBUG] [2021-05-28 11:21] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, ?)
+[DEBUG] [2021-05-28 11:21] ==> Parameters: test28@test.com(String), 11111(String), ±ËªÛ∞«(String), null
+[DEBUG] [2021-05-28 11:33] testRemoveMember()
+[DEBUG] [2021-05-28 11:33] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 11:33] ==> Parameters: 84(Long)
+[DEBUG] [2021-05-28 11:33] <==    Updates: 1
+[DEBUG] [2021-05-28 11:34] testRegisterMember()
+[DEBUG] [2021-05-28 11:34] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, ?)
+[DEBUG] [2021-05-28 11:34] ==> Parameters: test28@test.com(String), 11111(String), ±ËªÛ∞«(String), null
+[DEBUG] [2021-05-28 11:34] <==    Updates: 1
+[DEBUG] [2021-05-28 11:34] testDataSource()
+[DEBUG] [2021-05-28 11:34] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 11:34] LoginTimeout 30
+[DEBUG] [2021-05-28 11:34] testSqlSession()
+[DEBUG] [2021-05-28 11:34] session org.apache.ibatis.session.defaults.DefaultSqlSession@2f01210
+[DEBUG] [2021-05-28 11:34] testGetMember()
+[DEBUG] [2021-05-28 11:34] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 11:34] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 11:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:34] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 11:34] <==      Total: 1
+[DEBUG] [2021-05-28 11:34] testGetLists()
+[DEBUG] [2021-05-28 11:34] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 11:34] ==> Parameters: 
+[TRACE] [2021-05-28 11:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:34] <==        Row: 66, tkdrjs7@naver.com, 1111111, ±ËªÛ∞«, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 11:34] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 11:34] <==        Row: 70, test2@test.com, , ±ËπŒ, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 11:34] <==        Row: 71, test3@test.com, 111111, ±Ë¡ˆ¿∫, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 11:34] <==        Row: 72, test26@test.com, 1234567, ±Ë¡¯øµ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 11:34] <==        Row: 73, test5@test.com, 55555555, ±Ë¡ˆø¨, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 11:34] <==        Row: 74, test50@test.com, 1111111, ±ËπÃø¨, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 11:34] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 11:34] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 11:34] <==        Row: 77, test27@test.com, 2222222, ±ËªÛ∞«, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 11:34] <==        Row: 81, tkdrjs72@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 11:34] <==        Row: 82, tkdrjs722@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 11:34] <==        Row: 83, tkdrjs7232@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:50.0
+[TRACE] [2021-05-28 11:34] <==        Row: 86, test28@test.com, 11111, ±ËªÛ∞«, null
+[DEBUG] [2021-05-28 11:34] <==      Total: 14
+[DEBUG] [2021-05-28 11:34] testRemoveMember()
+[DEBUG] [2021-05-28 11:34] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 11:34] ==> Parameters: 84(Long)
+[DEBUG] [2021-05-28 11:34] <==    Updates: 0
+[DEBUG] [2021-05-28 11:35] testRemoveMember()
+[DEBUG] [2021-05-28 11:35] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 11:35] ==> Parameters: 84(Long)
+[DEBUG] [2021-05-28 11:35] <==    Updates: 0
+[DEBUG] [2021-05-28 11:35] testRemoveMember()
+[DEBUG] [2021-05-28 11:35] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 11:35] ==> Parameters: 86(Long)
+[DEBUG] [2021-05-28 11:35] <==    Updates: 1
+[DEBUG] [2021-05-28 11:40] testRegisterMember()
+[DEBUG] [2021-05-28 11:40] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, ?)
+[DEBUG] [2021-05-28 11:40] ==> Parameters: test28@test.com(String), 11111(String), ÍπÄÏÉÅÍ±¥(String), null
+[DEBUG] [2021-05-28 11:40] <==    Updates: 1
+[DEBUG] [2021-05-28 11:40] testRemoveMember()
+[DEBUG] [2021-05-28 11:40] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 11:40] ==> Parameters: 86(Long)
+[DEBUG] [2021-05-28 11:40] <==    Updates: 0
+[DEBUG] [2021-05-28 11:40] testDataSource()
+[DEBUG] [2021-05-28 11:40] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 11:40] LoginTimeout 30
+[DEBUG] [2021-05-28 11:40] testSqlSession()
+[DEBUG] [2021-05-28 11:40] session org.apache.ibatis.session.defaults.DefaultSqlSession@a8b623
+[DEBUG] [2021-05-28 11:40] testGetMember()
+[DEBUG] [2021-05-28 11:40] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 11:40] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 11:40] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:40] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 11:40] <==      Total: 1
+[DEBUG] [2021-05-28 11:40] testGetLists()
+[DEBUG] [2021-05-28 11:40] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 11:40] ==> Parameters: 
+[TRACE] [2021-05-28 11:40] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 11:40] <==        Row: 66, tkdrjs7@naver.com, 1111111, ±ËªÛ∞«, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 11:40] <==        Row: 68, test1@test.com, 111, ±ËªÛ¿œ, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 11:40] <==        Row: 70, test2@test.com, , ±ËπŒ, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 11:40] <==        Row: 71, test3@test.com, 111111, ±Ë¡ˆ¿∫, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 11:40] <==        Row: 72, test26@test.com, 1234567, ±Ë¡¯øµ, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 11:40] <==        Row: 73, test5@test.com, 55555555, ±Ë¡ˆø¨, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 11:40] <==        Row: 74, test50@test.com, 1111111, ±ËπÃø¨, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 11:40] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 11:40] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 11:40] <==        Row: 77, test27@test.com, 2222222, ±ËªÛ∞«, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 11:40] <==        Row: 81, tkdrjs72@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 11:40] <==        Row: 82, tkdrjs722@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 11:40] <==        Row: 83, tkdrjs7232@naver.com, 123456, ±ËªÛ∞«, 2021-05-27 12:44:50.0
+[TRACE] [2021-05-28 11:40] <==        Row: 87, test28@test.com, 11111, ±ËªÛ∞«, null
+[DEBUG] [2021-05-28 11:40] <==      Total: 14
+[DEBUG] [2021-05-28 11:40] testModifyMember()
+[DEBUG] [2021-05-28 11:40] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-28 11:40] ==> Parameters: ±ËªÛ∞«(String), 222222(String), test28@test.com(String)
+[DEBUG] [2021-05-28 11:40] <==    Updates: 1
+[DEBUG] [2021-05-28 11:40] testRegisterMember()
+[DEBUG] [2021-05-28 11:40] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, ?)
+[DEBUG] [2021-05-28 11:40] ==> Parameters: test28@test.com(String), 11111(String), ±ËªÛ∞«(String), null
+[DEBUG] [2021-05-28 11:40] testModifyMember()
+[DEBUG] [2021-05-28 11:40] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-28 11:40] ==> Parameters: ÍπÄÏÉÅÍ±¥(String), 222222(String), test28@test.com(String)
+[DEBUG] [2021-05-28 11:40] <==    Updates: 1
+[DEBUG] [2021-05-28 11:41] testModifyMember()
+[DEBUG] [2021-05-28 11:41] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-28 11:41] ==> Parameters: ±ËªÛ∞«(String), 222222(String), test28@test.com(String)
+[DEBUG] [2021-05-28 11:41] <==    Updates: 1
+[DEBUG] [2021-05-28 11:41] testRemoveMember()
+[DEBUG] [2021-05-28 11:41] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 11:41] ==> Parameters: 86(Long)
+[DEBUG] [2021-05-28 11:41] <==    Updates: 0
+[DEBUG] [2021-05-28 11:42] testRemoveMember()
+[DEBUG] [2021-05-28 11:42] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 11:42] ==> Parameters: 87(Long)
+[DEBUG] [2021-05-28 11:42] <==    Updates: 1
+[DEBUG] [2021-05-28 12:27] testRegisterMember()
+[DEBUG] [2021-05-28 12:27] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, now())
+[DEBUG] [2021-05-28 12:27] ==> Parameters: test28@test.com(String), 11111(String), ±ËªÛ∞«(String)
+[DEBUG] [2021-05-28 12:27] <==    Updates: 1
+[DEBUG] [2021-05-28 12:27] ==>  Preparing: select last_insert_id()
+[DEBUG] [2021-05-28 12:27] ==> Parameters: 
+[TRACE] [2021-05-28 12:27] <==    Columns: last_insert_id()
+[TRACE] [2021-05-28 12:27] <==        Row: 89
+[DEBUG] [2021-05-28 12:27] <==      Total: 1
+[DEBUG] [2021-05-28 12:27] res id >>1
+[DEBUG] [2021-05-28 12:27] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 12:27] ==> Parameters: 89(Long)
+[DEBUG] [2021-05-28 12:27] <==    Updates: 1
+[DEBUG] [2021-05-28 12:29] testRegisterMember()
+[DEBUG] [2021-05-28 12:29] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, now())
+[DEBUG] [2021-05-28 12:29] ==> Parameters: test28@test.com(String), 11111(String), ÍπÄÏÉÅÍ±¥(String)
+[DEBUG] [2021-05-28 12:29] <==    Updates: 1
+[DEBUG] [2021-05-28 12:29] ==>  Preparing: select last_insert_id()
+[DEBUG] [2021-05-28 12:29] ==> Parameters: 
+[TRACE] [2021-05-28 12:29] <==    Columns: last_insert_id()
+[TRACE] [2021-05-28 12:29] <==        Row: 90
+[DEBUG] [2021-05-28 12:29] <==      Total: 1
+[DEBUG] [2021-05-28 12:29] testRegisterMember()
+[DEBUG] [2021-05-28 12:29] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, now())
+[DEBUG] [2021-05-28 12:29] ==> Parameters: test28@test.com(String), 11111(String), ÍπÄÏÉÅÍ±¥(String)
+[DEBUG] [2021-05-28 12:29] <==    Updates: 1
+[DEBUG] [2021-05-28 12:29] ==>  Preparing: select last_insert_id()
+[DEBUG] [2021-05-28 12:29] ==> Parameters: 
+[TRACE] [2021-05-28 12:29] <==    Columns: last_insert_id()
+[TRACE] [2021-05-28 12:29] <==        Row: 91
+[DEBUG] [2021-05-28 12:29] <==      Total: 1
+[DEBUG] [2021-05-28 12:36] test03Insert()
+[DEBUG] [2021-05-28 12:36] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, now())
+[DEBUG] [2021-05-28 12:36] ==> Parameters: test28@test.com(String), 11111(String), ±ËªÛ∞«(String)
+[DEBUG] [2021-05-28 12:37] test03Insert()
+[DEBUG] [2021-05-28 12:37] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, now())
+[DEBUG] [2021-05-28 12:37] ==> Parameters: test64@test.com(String), 11111(String), ±ËªÛ∞«(String)
+[DEBUG] [2021-05-28 12:37] <==    Updates: 1
+[DEBUG] [2021-05-28 12:37] ==>  Preparing: select last_insert_id()
+[DEBUG] [2021-05-28 12:37] ==> Parameters: 
+[TRACE] [2021-05-28 12:37] <==    Columns: last_insert_id()
+[TRACE] [2021-05-28 12:37] <==        Row: 93
+[DEBUG] [2021-05-28 12:37] <==      Total: 1
+[DEBUG] [2021-05-28 12:37] res id >>1
+[DEBUG] [2021-05-28 12:37] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 12:37] ==> Parameters: 93(Long)
+[DEBUG] [2021-05-28 12:37] <==    Updates: 1

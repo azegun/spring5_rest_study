@@ -37,6 +37,9 @@ public class Member {
 	}
 
 
+	public Member(Long id) {
+		this.id = id;
+	}
 	public Member() {
 	}
 

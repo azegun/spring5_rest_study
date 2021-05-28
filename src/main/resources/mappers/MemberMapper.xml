@@ -22,7 +22,11 @@
 		
 		<insert id="insert" parameterType="Member" >
 				insert into member(EMAIL, PASSWORD, NAME, REGDATE)
-				 values (#{email}, #{password}, #{name}, #{ registerDateTime})		
+				 values (#{email}, #{password}, #{name}, now())   <!-- now()사용 -->
+				 <!-- 마지막에 어떤 id들어가는지 모르니까 넣어주면 자동 셀렉트기능 -->
+				 <selectKey keyProperty="id" resultType="Long">
+				 		select last_insert_id()
+				 </selectKey>		
 		</insert>
 		
 		<update id="update" parameterType="Member">
@@ -31,7 +35,7 @@
 		</update>	
 	
 		<delete id="delete" parameterType="Member">
-				delete from member	where email = #{email}
+				delete from member	where id = #{id}
 		</delete>		
 		
 		
