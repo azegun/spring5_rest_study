@@ -5,11 +5,12 @@ import java.util.List;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import spring5_rest_study.dto.Member;
 import spring5_rest_study.mapper.MemberMapper;
 import spring5_rest_study.service.MemberListService;
-
+@Service
 public class MemberListServiceImpl implements MemberListService {
 
 	static final Log log = LogFactory.getLog(MemberListServiceImpl.class);

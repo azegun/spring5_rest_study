@@ -30,13 +30,14 @@ public class Member {
 	}
 	
 	
+	
+
+
 	public Member(String email, String password, String name) {
 		this.email = email;
 		this.password = password;
 		this.name = name;
 	}
-
-
 	public Member(Long id) {
 		this.id = id;
 	}

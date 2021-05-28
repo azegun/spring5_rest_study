@@ -1,7 +1,5 @@
 package spring5_rest_study.mapper;
 
-import static org.junit.Assert.fail;
-
 import java.util.List;
 
 import org.apache.ibatis.logging.Log;
@@ -16,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
+
 import spring5_rest_study.config.ContextRoot;
 import spring5_rest_study.dto.Member;
 
@@ -70,8 +69,10 @@ public class MemberMapperTest {
 	public void test04Update() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 		
-		Member newMember = new Member("test28@test.com", "2222224", "김상건");
+		Member newMember = new Member("test64@test.com", "123456", "test");
+		newMember.setId(74L);
 		int res = mapper.update(newMember);
+		
 		Assert.assertEquals(1, res);
 	}
 

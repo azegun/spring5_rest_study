@@ -315,3 +315,131 @@
 [DEBUG] [2021-05-28 12:37] ==>  Preparing: delete from member where id = ?
 [DEBUG] [2021-05-28 12:37] ==> Parameters: 93(Long)
 [DEBUG] [2021-05-28 12:37] <==    Updates: 1
+[DEBUG] [2021-05-28 14:47] test01SelectById()
+[DEBUG] [2021-05-28 14:47] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 14:47] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 14:47] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 14:47] <==        Row: 68, test1@test.com, 111, 김상일, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 14:47] <==      Total: 1
+[DEBUG] [2021-05-28 14:47] test03Insert()
+[DEBUG] [2021-05-28 14:47] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, now())
+[DEBUG] [2021-05-28 14:47] ==> Parameters: test64@test.com(String), 11111(String), 김상건(String)
+[DEBUG] [2021-05-28 14:47] <==    Updates: 1
+[DEBUG] [2021-05-28 14:47] ==>  Preparing: select last_insert_id()
+[DEBUG] [2021-05-28 14:47] ==> Parameters: 
+[TRACE] [2021-05-28 14:47] <==    Columns: last_insert_id()
+[TRACE] [2021-05-28 14:47] <==        Row: 94
+[DEBUG] [2021-05-28 14:47] <==      Total: 1
+[DEBUG] [2021-05-28 14:47] res id >>1
+[DEBUG] [2021-05-28 14:47] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 14:47] ==> Parameters: 94(Long)
+[DEBUG] [2021-05-28 14:47] <==    Updates: 1
+[DEBUG] [2021-05-28 14:47] test04Update()
+[DEBUG] [2021-05-28 14:47] ==>  Preparing: update member set name = ?, password = ? where email = ?
+[DEBUG] [2021-05-28 14:47] ==> Parameters: 김상건(String), 2222224(String), test28@test.com(String)
+[DEBUG] [2021-05-28 14:47] <==    Updates: 1
+[DEBUG] [2021-05-28 14:47] test05Delete()
+[DEBUG] [2021-05-28 14:47] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 14:47] ==> Parameters: 80(Long)
+[DEBUG] [2021-05-28 14:47] <==    Updates: 0
+[DEBUG] [2021-05-28 14:47] test05SelectAll()
+[DEBUG] [2021-05-28 14:47] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 14:47] ==> Parameters: 
+[TRACE] [2021-05-28 14:47] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 14:47] <==        Row: 66, tkdrjs7@naver.com, 1111111, 김상건, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 14:47] <==        Row: 68, test1@test.com, 111, 김상일, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 14:47] <==        Row: 70, test2@test.com, , 김민, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 14:47] <==        Row: 71, test3@test.com, 111111, 김지은, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 14:47] <==        Row: 72, test26@test.com, 1234567, 김진영, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 14:47] <==        Row: 73, test5@test.com, 55555555, 김지연, 2021-05-26 11:38:47.0
+[TRACE] [2021-05-28 14:47] <==        Row: 74, test50@test.com, 1111111, 김미연, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 14:47] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 14:47] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 14:47] <==        Row: 77, test27@test.com, 2222222, 김상건, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 14:47] <==        Row: 81, tkdrjs72@naver.com, 123456, 김상건, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 14:47] <==        Row: 82, tkdrjs722@naver.com, 123456, 김상건, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 14:47] <==        Row: 83, tkdrjs7232@naver.com, 123456, 김상건, 2021-05-27 12:44:50.0
+[TRACE] [2021-05-28 14:47] <==        Row: 91, test28@test.com, 2222224, 김상건, 2021-05-28 12:29:26.0
+[DEBUG] [2021-05-28 14:47] <==      Total: 14
+[DEBUG] [2021-05-28 14:47] testSqlSession()
+[DEBUG] [2021-05-28 14:47] session org.apache.ibatis.session.defaults.DefaultSqlSession@55e3d6c3
+[DEBUG] [2021-05-28 14:47] testDataSource()
+[DEBUG] [2021-05-28 14:47] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-28 14:47] LoginTimeout 30
+[DEBUG] [2021-05-28 15:13] test01SelectById()
+[DEBUG] [2021-05-28 15:13] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 15:13] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 15:13] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 15:13] <==        Row: 68, test1@test.com, 111, 김상일, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 15:13] <==      Total: 1
+[DEBUG] [2021-05-28 15:13] test04Update()
+[DEBUG] [2021-05-28 15:13] ==>  Preparing: update member set name = ?, password = ? where id = ?
+[DEBUG] [2021-05-28 15:13] ==> Parameters: test(String), 123456(String), 74(Long)
+[DEBUG] [2021-05-28 15:13] <==    Updates: 1
+[DEBUG] [2021-05-28 15:13] test05Delete()
+[DEBUG] [2021-05-28 15:13] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 15:13] ==> Parameters: 80(Long)
+[DEBUG] [2021-05-28 15:13] <==    Updates: 0
+[DEBUG] [2021-05-28 15:13] test05SelectAll()
+[DEBUG] [2021-05-28 15:13] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 15:13] ==> Parameters: 
+[TRACE] [2021-05-28 15:13] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 15:13] <==        Row: 66, tkdrjs7@naver.com, 1111111, 김상건, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 15:13] <==        Row: 68, test1@test.com, 111, 김상일, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 15:13] <==        Row: 70, test2@test.com, , 김민, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 15:13] <==        Row: 71, test3@test.com, 111111, 김지은, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 15:13] <==        Row: 72, test26@test.com, 1234567, 김진영, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 15:13] <==        Row: 74, test50@test.com, 123456, test, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 15:13] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 15:13] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 15:13] <==        Row: 77, test27@test.com, 2222222, 김상건, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 15:13] <==        Row: 81, tkdrjs72@naver.com, 123456, 김상건, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 15:13] <==        Row: 82, tkdrjs722@naver.com, 123456, 김상건, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 15:13] <==        Row: 83, tkdrjs7232@naver.com, 123456, 김상건, 2021-05-27 12:44:50.0
+[TRACE] [2021-05-28 15:13] <==        Row: 91, test28@test.com, 2222224, 김상건, 2021-05-28 12:29:26.0
+[DEBUG] [2021-05-28 15:13] <==      Total: 13
+[DEBUG] [2021-05-28 15:14] test01SelectById()
+[DEBUG] [2021-05-28 15:14] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member where id = ?
+[DEBUG] [2021-05-28 15:14] ==> Parameters: 68(Long)
+[TRACE] [2021-05-28 15:14] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 15:14] <==        Row: 68, test1@test.com, 111, 김상일, 2021-05-24 12:44:01.0
+[DEBUG] [2021-05-28 15:14] <==      Total: 1
+[DEBUG] [2021-05-28 15:14] test03Insert()
+[DEBUG] [2021-05-28 15:14] ==>  Preparing: insert into member(EMAIL, PASSWORD, NAME, REGDATE) values (?, ?, ?, now())
+[DEBUG] [2021-05-28 15:14] ==> Parameters: test64@test.com(String), 11111(String), 김상건(String)
+[DEBUG] [2021-05-28 15:14] <==    Updates: 1
+[DEBUG] [2021-05-28 15:14] ==>  Preparing: select last_insert_id()
+[DEBUG] [2021-05-28 15:14] ==> Parameters: 
+[TRACE] [2021-05-28 15:14] <==    Columns: last_insert_id()
+[TRACE] [2021-05-28 15:14] <==        Row: 98
+[DEBUG] [2021-05-28 15:14] <==      Total: 1
+[DEBUG] [2021-05-28 15:14] res id >>1
+[DEBUG] [2021-05-28 15:14] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 15:14] ==> Parameters: 98(Long)
+[DEBUG] [2021-05-28 15:14] <==    Updates: 1
+[DEBUG] [2021-05-28 15:14] test04Update()
+[DEBUG] [2021-05-28 15:14] ==>  Preparing: update member set name = ?, password = ? where id = ?
+[DEBUG] [2021-05-28 15:14] ==> Parameters: test(String), 123456(String), 74(Long)
+[DEBUG] [2021-05-28 15:14] <==    Updates: 1
+[DEBUG] [2021-05-28 15:14] test05Delete()
+[DEBUG] [2021-05-28 15:14] ==>  Preparing: delete from member where id = ?
+[DEBUG] [2021-05-28 15:14] ==> Parameters: 80(Long)
+[DEBUG] [2021-05-28 15:14] <==    Updates: 0
+[DEBUG] [2021-05-28 15:14] test05SelectAll()
+[DEBUG] [2021-05-28 15:14] ==>  Preparing: select ID, EMAIL, PASSWORD, NAME, REGDATE from member
+[DEBUG] [2021-05-28 15:14] ==> Parameters: 
+[TRACE] [2021-05-28 15:14] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-28 15:14] <==        Row: 66, tkdrjs7@naver.com, 1111111, 김상건, 2021-05-24 11:49:22.0
+[TRACE] [2021-05-28 15:14] <==        Row: 68, test1@test.com, 111, 김상일, 2021-05-24 12:44:01.0
+[TRACE] [2021-05-28 15:14] <==        Row: 70, test2@test.com, , 김민, 2021-05-24 16:04:22.0
+[TRACE] [2021-05-28 15:14] <==        Row: 71, test3@test.com, 111111, 김지은, 2021-05-25 20:19:57.0
+[TRACE] [2021-05-28 15:14] <==        Row: 72, test26@test.com, 1234567, 김진영, 2021-05-26 09:21:13.0
+[TRACE] [2021-05-28 15:14] <==        Row: 74, test50@test.com, 123456, test, 2021-05-26 11:41:53.0
+[TRACE] [2021-05-28 15:14] <==        Row: 75, test18@test.com, 12345, JUMYEOP LIM, 2021-05-26 11:55:00.0
+[TRACE] [2021-05-28 15:14] <==        Row: 76, test111@test.com, 111111, JUMYEOP LI, 2021-05-26 12:01:59.0
+[TRACE] [2021-05-28 15:14] <==        Row: 77, test27@test.com, 2222222, 김상건, 2021-05-27 11:17:20.0
+[TRACE] [2021-05-28 15:14] <==        Row: 81, tkdrjs72@naver.com, 123456, 김상건, 2021-05-27 12:43:07.0
+[TRACE] [2021-05-28 15:14] <==        Row: 82, tkdrjs722@naver.com, 123456, 김상건, 2021-05-27 12:44:01.0
+[TRACE] [2021-05-28 15:14] <==        Row: 83, tkdrjs7232@naver.com, 123456, 김상건, 2021-05-27 12:44:50.0
+[TRACE] [2021-05-28 15:14] <==        Row: 91, test28@test.com, 2222224, 김상건, 2021-05-28 12:29:26.0
+[DEBUG] [2021-05-28 15:14] <==      Total: 13
