@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring5_rest_study.mapper.MemberMapper">
+		
+		<!-- column은 SQL, property는 dto -->
+	<resultMap type="Member" id="ResMember">
+		<id property="id" column="id"/>
+		<result property="email" column="email"/>
+		<result property="name" column="name"/>
+		<result property="password" column="password"/>
+		<result property="registerDateTime" column="regdate"/>
+	</resultMap>
+
+		<sql id="selectSQL">
+			select ID, EMAIL, PASSWORD, NAME, REGDATE 
+			from member 
+		</sql>
+		
+		<select id="selectAll" resultMap="ResMember">
+			<include refid="selectSQL"/>		
+		</select>		
+		
+		<insert id="insert" parameterType="Member" >
+				insert into member(EMAIL, PASSWORD, NAME, REGDATE)
+				 values (#{email}, #{password}, #{name}, #{ registerDateTime})		
+		</insert>
+		
+		<update id="update" parameterType="Member">
+				update member set name = #{name}, password = #{password} 
+				where email = #{email}
+		</update>	
+	
+		<delete id="delete" parameterType="Member">
+				delete from member	where email = #{email}
+		</delete>		
+		
+		
+		<!-- Id별 조회 Get Id -->		
+		<!-- 웬만하면 resultMap으로 받자 -->
+				<select id="selectById" resultMap="ResMember">
+			<include refid="selectSQL"/>
+			where id = #{id}		
+		</select>
+
+</mapper>
+
