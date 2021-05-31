@@ -20,7 +20,7 @@ public class RegisterMemberController {
 	@Autowired 
 	private RegisterMemberService registerService;
 	
-	@PostMapping("/api/members/")
+	@PostMapping("/api/members")
 	public ResponseEntity<Object> newMember(@RequestBody Member member){
 		
 		try {
